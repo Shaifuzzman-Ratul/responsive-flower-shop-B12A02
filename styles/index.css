@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Inter;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    margin: 20px 150px 0 130px;
+
+}
+
+/* nav option */
+nav {
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+
+}
+
+nav img {
+    max-width: 80%;
+}
+
+.nav-option ul {
+    display: flex;
+    gap: 40px;
+}
+
+.nav-option ul li {
+    list-style: none;
+}
+
+.nav-option ul li a {
+    text-decoration: none;
+
+}
+
+.home {
+    color: rgb(37, 36, 50);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 700;
+    /* line-height: 24px; */
+}
+
+.shop,
+.about-us {
+    color: rgb(137, 135, 161);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+
+}
+
+.cart {
+    color: rgb(0, 0, 0);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* banner */
+.banner {
+    display: flex;
+
+
+
+
+}
+
+.banner-description {
+    padding-top: 150px;
+
+
+
+
+}
+
+.fresh {
+    color: rgb(233, 90, 8);
+}
+
+.banner-des-title {
+    color: rgb(0, 0, 0);
+    font-family: "Noto Serif", serif;
+    font-size: 65px;
+    font-weight: 700;
+    margin-bottom: 0;
+
+
+}
+
+.banner-title-des {
+    color: rgb(137, 135, 161);
+    /* width: fit-content; */
+    margin-top: 18px;
+    max-width: 80%;
+    margin-bottom: 0;
+    padding-bottom: 0%;
+}
+
+.banner-image {
+
+    width: 100%;
+    height: 100%;
+    padding-top: 100px;
+
+
+}
