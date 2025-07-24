@@ -1,5 +1,10 @@
-* {
+/* * {
     box-sizing: border-box;
+} */
+
+.container {
+    max-width: 1280px;
+    margin: auto;
 }
 
 body {
@@ -17,7 +22,7 @@ header {
 nav {
     display: flex;
     justify-content: space-between;
-
+    margin-top: 30px;
     align-items: center;
 
 }
@@ -101,6 +106,7 @@ nav img {
     /* width: fit-content; */
     margin-top: 18px;
     max-width: 80%;
+    font-size: 19px;
     margin-bottom: 0;
     padding-bottom: 0%;
 }
@@ -112,4 +118,154 @@ nav img {
     padding-top: 100px;
 
 
+}
+
+/* plant-section */
+
+
+/* plants-section {
+    margin-top: 870px;
+} */
+
+.heading {
+    text-align: center;
+}
+
+.heading-title {
+    font-family: Noto Serif;
+    font-size: 50px;
+    font-weight: 700;
+    padding-top: 40px;
+    padding-bottom: 0px;
+    margin-bottom: auto;
+}
+
+.heading-title span {
+    color: rgb(233, 90, 8);
+}
+
+.heading-desc {
+    color: rgba(0, 0, 0, 0.5);
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 27px;
+    /* max-width: 80%; */
+    text-align: center;
+    padding-left: 19%;
+    padding-right: 19%;
+}
+
+.plants-flower {
+    text-align: center;
+
+
+}
+
+.flower-price {
+    margin-bottom: 18px;
+    margin-top: 14px;
+}
+
+.plants-flower img {
+    height: auto;
+    width: 100%;
+}
+
+.flower-title {
+    font-family: Inter;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: auto;
+
+}
+
+.flower-price {
+    font-family: Inter;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.plants-section button {
+    color: rgb(255, 255, 255);
+    background-color: rgb(233, 90, 8);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 20px 50px 25px 50px;
+    border: none;
+    width: 299px;
+    height: 55px;
+}
+
+.plant-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 30px;
+    column-gap: 20px;
+}
+
+/* responsive */
+@media screen and (max-width:576px) {
+    /* body {
+
+        margin: 0;
+        padding: 0;
+    } */
+
+    header {
+        margin: 20px 20px;
+    }
+
+    nav img {
+        max-width: 100%;
+        height: 100%;
+        display: inline-block;
+    }
+
+    /* nav img {
+        max-width: 100%;
+        max-height: 100%;
+    } */
+
+    .home,
+    .shop,
+    .about-us {
+        display: none;
+
+    }
+
+    .banner {
+        flex-direction: column-reverse;
+        /* align-items: center; */
+        /* text-align: center; */
+    }
+
+    .banner-description {
+        padding-top: 50px;
+    }
+
+
+    .banner-image {
+        /* margin-left: 10.12%; */
+        padding-top: 0;
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+
+    .banner-des-title {
+        margin-top: 0;
+        padding-top: 0;
+        font-size: 36px;
+        font-weight: 700;
+        margin-bottom: 0;
+    }
+
+    .banner-title-des {
+        font-size: 15.5px;
+        font-weight: 400;
+        max-width: 100%;
+    }
 }
