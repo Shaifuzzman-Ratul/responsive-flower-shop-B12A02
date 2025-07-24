@@ -252,6 +252,135 @@ nav img {
     gap: 16px;
 }
 
+/* deal section */
+.deal-section {
+    margin-top: 130px;
+    text-align: center;
+}
+
+.deal-title {
+    font-family: Noto Serif;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 68px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.deal-text {
+    color: rgba(0, 0, 0, 0.5);
+    font-family: Inter;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 27px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+
+.deal-title span {
+    color: rgb(233, 90, 8);
+}
+
+.deal-image {
+    display: flex;
+    margin-bottom: 40px;
+    gap: 40px;
+
+
+}
+
+.deal-image-left {
+    flex: 25%;
+}
+
+.deal-image-left-1st {
+    color: white;
+    background-image: url(../assets/deal-bloom.png);
+    background-repeat: no-repeat;
+    border: 2px solid rebeccapurple;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.deal-image-left-2nd {
+    color: white;
+
+    background-image: url(../assets/deal-ana.png);
+    background-repeat: no-repeat;
+    border: 2px solid rebeccapurple;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.deal-image-left-right {
+    color: white;
+    flex: 100%;
+    background-image: url(../assets/deal-zabo.png);
+    background-repeat: no-repeat;
+    border: 2px solid rebeccapurple;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* join now section */
+.join {
+    background-image: url(../assets/news-letter-bg.png);
+    max-height: 100%;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* padding: 190px 300px 190px 300px; */
+}
+
+.join-title {
+    color: rgb(255, 255, 255);
+    font-family: Noto Serif;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 68px;
+    padding: 199px 305px 15px 305px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.join img {
+    max-width: 100%;
+    max-width: 100%;
+}
+
+.emlai-button {
+    display: flex;
+    gap: 0;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.emlai-button input {
+    /* padding: 8px 20px 8px 20px; */
+    width: 644px;
+    height: 50px;
+    border: none;
+    padding: 8px 20px 0 20px;
+    margin-bottom: 200px;
+
+}
+
+.emlai-button button {
+    background-color: rgb(233, 90, 8);
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19px;
+
+    border: none;
+    width: 186px;
+    height: 58px;
+}
+
 /* responsive */
 @media screen and (max-width:576px) {
     /* body {
