@@ -381,6 +381,74 @@ nav img {
     height: 58px;
 }
 
+/* footer section */
+.footer-section {
+    display: flex;
+    /* text-align: center; */
+    /* align-items: center; */
+    justify-content: center;
+    gap: 100px;
+    margin: 70px 150px 45px 150px;
+
+}
+
+.footer-left {
+    flex: 1;
+}
+
+.footer-left p {
+    color: rgba(0, 0, 0, 0.5);
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 27px;
+}
+
+.footer-middle {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    flex: 1;
+    grid-column: 100px;
+
+}
+
+.footer-middle li {
+    list-style: none;
+}
+
+.footer-middle a {
+    text-decoration: none;
+    color: rgb(107, 114, 128);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.footer-middle ul li {
+    margin-bottom: 30px;
+}
+
+.footer-end {
+    flex: 1;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* .twitter-main {
+    position: fixed;
+
+} */
+
+.twitter {
+    height: 22px;
+    padding-top: 9px;
+}
+
 /* responsive */
 @media screen and (max-width:576px) {
     /* body {
