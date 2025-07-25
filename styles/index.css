@@ -310,6 +310,11 @@ nav img {
     font-weight: 700;
     line-height: 27px;
     letter-spacing: 0%;
+    filter: brightness(.85);
+}
+
+.deal-image-left-1st-des h3 p {
+    color: rgb(187, 9, 9);
 }
 
 .deal-image-left-2nd {
@@ -326,9 +331,10 @@ nav img {
     height: 210px;
     background-size: cover;
     font-family: Noto Serif;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 700;
-    line-height: 27px;
+    line-height: 25px;
+    filter: brightness(.78);
 
 }
 
@@ -354,7 +360,11 @@ nav img {
     font-weight: 700;
     line-height: 27px;
     letter-spacing: 0%;
-    filter: brightness(.81);
+    filter: brightness(.79);
+}
+
+.deal-image-left bacground-image {
+    color: #e95a08;
 }
 
 .deal-image-left-right h3 {
@@ -749,18 +759,36 @@ nav img {
 
 
         .deal-image-left-1st {
+            /* flex: 1; */
             text-align: center;
             background-image: url('../assets/deal-bloom.png');
+            filter: brightness(.85);
+            width: 23.4rem;
+            height: 210px;
+            max-width: 100%;
         }
 
         .deal-image-left-2nd {
+            /* flex: 1; */
+            border-radius: 3px;
             text-align: center;
             background-image: url('../assets/deal-ana.png');
+            background-size: cover;
+            filter: brightness(.738);
+            box-shadow: #000;
+            width: 23.4rem;
+            max-width: 100%;
+            height: 200px;
         }
 
         .deal-image-left-right {
             text-align: center;
+            /* flex: 1; */
             background-image: url('../assets/deal-zabo.png');
+            filter: brightness(.739);
+            width: 23.4rem;
+            max-width: 100%;
+            height: 250px;
         }
 
 
@@ -768,7 +796,11 @@ nav img {
             font-family: 'Noto Serif', serif;
             font-size: 24px;
             font-weight: 800;
-            margin-bottom: 8px;
+            margin-bottom: -4px;
+        }
+
+        .deal-image-left-1st h3 {
+            margin-bottom: 28px;
         }
 
         .deal-image p u {
@@ -804,6 +836,8 @@ nav img {
             background-size: cover;
             background-position: center;
             margin-top: -18px;
+            padding-bottom: 128px;
+            padding-right: 42px;
 
         }
 
