@@ -7,7 +7,7 @@ body {
 
 .container {
     max-width: 1280px;
-    margin: auto;
+    margin: 0 auto;
 }
 
 body {
@@ -118,7 +118,7 @@ nav img {
 .banner-image {
 
     width: 100%;
-    height: 50%;
+    height: 100%;
     padding-top: 100px;
 
 
@@ -131,9 +131,9 @@ nav img {
     margin-top: 870px;
 } */
 
-.heading {
+/* .heading {
     text-align: center;
-}
+} */
 
 .heading-title {
     font-family: Noto Serif;
@@ -142,6 +142,7 @@ nav img {
     padding-top: 40px;
     padding-bottom: 0px;
     margin-bottom: auto;
+    text-align: center;
 }
 
 .heading-title span {
@@ -207,6 +208,10 @@ nav img {
     grid-template-columns: repeat(4, 1fr);
     row-gap: 30px;
     column-gap: 20px;
+}
+
+.plant-list img {
+    width: 100%;
 }
 
 /* plant-lover-section */
@@ -286,31 +291,57 @@ nav img {
     display: flex;
     margin-bottom: 40px;
     gap: 40px;
-
+    max-width: 100%;
+    height: auto;
+    text-align: center;
 
 }
 
 .deal-image-left {
-    flex: 25%;
+    flex: 30%;
 }
 
 .deal-image-left-1st {
+    border-radius: 10px;
     color: white;
     background-image: url(../assets/deal-bloom.png);
     background-repeat: no-repeat;
-    border: 2px solid rebeccapurple;
-    max-width: 100%;
-    max-height: 100%;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 380px;
+    height: 230px;
+    font-family: Noto Serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 27px;
+    letter-spacing: 0%;
 }
 
 .deal-image-left-2nd {
     color: white;
-
+    border-radius: 10px;
     background-image: url(../assets/deal-ana.png);
     background-repeat: no-repeat;
-    border: 2px solid rebeccapurple;
-    max-width: 100%;
-    max-height: 100%;
+    text-align: center;
+    display: flex;
+    gap: 1px;
+    flex-direction: column;
+    justify-content: center;
+    width: 380px;
+    height: 210px;
+    background-size: cover;
+    font-family: Noto Serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 27px;
+
+}
+
+.deal-image-left h3 {
+    font-size: x-large;
 }
 
 .deal-image-left-right {
@@ -318,9 +349,24 @@ nav img {
     flex: 100%;
     background-image: url(../assets/deal-zabo.png);
     background-repeat: no-repeat;
-    border: 2px solid rebeccapurple;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     max-width: 100%;
-    max-height: 100%;
+    height: auto;
+    background-size: cover;
+    border-radius: 10px;
+    font-family: Noto Serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 27px;
+    letter-spacing: 0%;
+}
+
+.deal-image-left-right h3 {
+    font-size: 40px;
+    font-weight: bolder;
 }
 
 /* join now section */
@@ -450,85 +496,212 @@ nav img {
 }
 
 /* responsive */
-@media screen and (max-width:576px) {
-    /* body {
 
-        margin: 0;
-        padding: 0;
-    } */
+@media (max-width: 576px) {
 
-    header {
-        margin: 20px 20px;
+    /* Header layout fix */
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px 10px;
+
     }
 
-    nav img {
-        max-width: 100%;
-        height: 100%;
-        display: inline-block;
+    .nav-option ul {
+        gap: 0px;
     }
-
-    /* nav img {
-        max-width: 100%;
-        max-height: 100%;
-    } */
 
     .home,
     .shop,
     .about-us {
         display: none;
-
+        /* Hide full menu on small screens */
     }
 
+    .nav-logo img {
+        width: 120px;
+        height: auto;
+    }
+
+    .cart {
+        font-size: 13px;
+        color: #000;
+    }
+
+    /* BANNER */
     .banner {
+        display: flex;
         flex-direction: column-reverse;
-        /* align-items: center; */
-        /* text-align: center; */
+        padding: 0 0px;
+        margin-top: 10px;
+    }
+
+    .banner-image {
+        padding-top: 0px;
+    }
+
+    .banner-image img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+
     }
 
     .banner-description {
-        padding-top: 50px;
+        text-align: left;
     }
 
-
-    .banner-image {
-        /* margin-left: 10.12%; */
+    .banner-description {
         padding-top: 0;
-        width: 100%;
-        height: auto;
-        display: block;
+        padding-left: 16px;
     }
-
 
     .banner-des-title {
-        margin-top: 0;
-        padding-top: 0;
-        font-size: 36px;
-        font-weight: 700;
-        margin-bottom: 0;
+        font-size: 33px;
+        font-weight: bold;
+        line-height: 1.3;
+        margin-bottom: 10px;
+    }
+
+    .banner-des-title .fresh {
+        color: #e95a08;
+        /* Orange */
     }
 
     .banner-title-des {
-        font-size: 15.5px;
-        font-weight: 400;
-        max-width: 100%;
+        font-size: 13px;
+        line-height: 1.5;
+        color: rgba(0, 0, 0, 0.75);
     }
 
-    /* plant section */
-    plants-section {
-        max-width: 100%;
-        max-height: 100%;
-
+    /* our plant section */
+    .heading-title {
+        font-size: 28px;
+        padding-top: 20px;
     }
 
-    .plants-section img {
-        max-width: 100%;
+    .heading-desc {
+        font-size: 14px;
+        line-height: 22px;
+        padding-left: 8%;
+        padding-right: 8%;
     }
 
     .plant-list {
-        display: grid;
         grid-template-columns: repeat(2, 1fr);
-        /* row-gap: 30px;
-        column-gap: 20px; */
+        /* 2 items per row */
+        gap: 20px;
+        padding: 0 10px;
     }
 
+    .plants-flower {
+        padding: 10px;
+    }
+
+    .plants-flower img {
+        width: 100%;
+        height: auto;
+    }
+
+    .flower-title,
+    .flower-price {
+        font-size: 14px;
+    }
+
+    .plants-section button {
+        padding: 12px 0;
+        font-size: 14px;
+        width: 100%;
+    }
+
+    .container {
+        padding: 0 0px;
+    }
+
+    /* plant lover section */
+    .plant-lover {
+        display: flex;
+        flex-direction: column;
+        padding: 24px 16px;
+        gap: 32px;
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .main-image {
+        position: relative;
+    }
+
+
+    .badge {
+        display: none;
+    }
+
+    .right-section {
+        text-align: left;
+    }
+
+    .right-title {
+        font-family: "Noto Serif", serif;
+        font-size: 31px;
+        line-height: 38px;
+        font-weight: 700;
+        margin-bottom: 5px;
+    }
+
+    .right-title br {
+        display: none;
+    }
+
+    .right-des {
+        font-family: "Inter", sans-serif;
+        font-size: 16px;
+        line-height: 26px;
+        color: rgba(0, 0, 0, 0.6);
+        display: grid;
+        gap: 12px;
+        padding: 0;
+        margin: 0;
+        list-style-position: inside;
+    }
+
+    .container {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    html,
+    body {
+        overflow-x: hidden;
+
+        margin: 0;
+        padding: 0;
+
+
+        * {
+            box-sizing: border-box;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+
+
+        /* responsive footer */
+
+        .footer-section {
+            flex-direction: column;
+            margin: 0;
+        }
+
+        .footer-end {
+            display: flex;
+            text-align: left;
+            justify-content: left;
+        }
+    }
 }
