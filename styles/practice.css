@@ -1,0 +1,17 @@
+.deal-image-left-1st-des {
+    text-align: center;
+    position: absolute;
+    z-index: 2;
+    color: white;
+    top: 300px;
+    right: 100px;
+}
+
+deal-image-left-1st {
+    filter: brightness(.1);
+    position: fixed;
+}
+
+.deal-image-left {
+    position: fixed;
+}

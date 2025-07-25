@@ -913,6 +913,7 @@ nav img {
             display: flex;
             text-align: left;
             justify-content: left;
+            padding-bottom: 27px;
         }
     }
 }
