@@ -259,8 +259,9 @@ nav img {
 
 /* deal section */
 .deal-section {
-    margin-top: 130px;
+    margin-top: -137px;
     text-align: center;
+    margin-bottom: 100px;
 }
 
 .deal-title {
@@ -278,7 +279,7 @@ nav img {
     font-size: 22px;
     font-weight: 400;
     line-height: 27px;
-    margin-bottom: 100px;
+    margin-bottom: 83px;
     text-align: center;
 }
 
@@ -367,6 +368,15 @@ nav img {
 .deal-image-left-right h3 {
     font-size: 40px;
     font-weight: bolder;
+}
+
+.right-shop {
+    font-size: 27px;
+    font-family: Inter;
+}
+
+.deal-image p u {
+    font-family: Inter;
 }
 
 /* join now section */
@@ -689,6 +699,119 @@ nav img {
             display: block;
         }
 
+        /* deal section */
+        .deal-section {
+            margin-top: 40px;
+            margin-bottom: 80px;
+            text-align: center;
+            padding: 0 16px;
+        }
+
+        .deal-title {
+            font-family: 'Noto Serif', serif;
+            font-size: 34px;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .deal-title span {
+            color: rgb(233, 90, 8);
+        }
+
+        .deal-text {
+            color: rgba(0, 0, 0, 0.5);
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+            margin: 0 auto 36px;
+            max-width: 600px;
+        }
+
+        /* Cards layout */
+        .deal-image {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .deal-image-left {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        /* Deal Cards */
+        .deal-image-left-1st,
+        .deal-image-left-2nd,
+        .deal-image-left-right {
+            background-size: cover;
+            background-position: center;
+            border-radius: 12px;
+            padding: 20px;
+            min-height: 180px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            border: 2px dashed rgba(255, 255, 255, 0.8);
+            text-align: left;
+        }
+
+
+        .deal-image-left-1st {
+            background-image: url('../assets/deal-bloom.png');
+        }
+
+        .deal-image-left-2nd {
+            background-image: url('../assets/deal-ana.png');
+        }
+
+        .deal-image-left-right {
+            background-image: url('../assets/deal-zabo.png');
+        }
+
+
+        .deal-image h3 {
+            font-family: 'Noto Serif', serif;
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .deal-image p u {
+            font-family: Inter, sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 4px 8px;
+            border-radius: 4px;
+            text-decoration: underline;
+        }
+
+
+        .deal-image-left-right h3 {
+            font-size: 24px;
+        }
+
+        .right-shop {
+            font-size: 16px;
+        }
+
+        /* === Breakpoint === */
+        /* @media (min-width: 576px) {
+            .deal-image {
+                flex-direction: row;
+            }
+
+            .deal-image-left {
+                flex: 1;
+            }
+
+            .deal-image-left-right {
+                flex: 2;
+            }
+        } */
 
 
         /* responsive footer */
